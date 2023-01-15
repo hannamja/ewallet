@@ -14,6 +14,10 @@ import Tabs from './navigation/tabs';
 import ChuyenTien from './screens/ChuyenTien';
 import TabsChuyenTien from './navigation/tabsChuyenTien';
 import ChooseBank from './screens/ChooseBank';
+import NapRut from './screens/NapRut';
+import NapTien from './screens/NapTien';
+import RutTien from './screens/RutTien';
+import RutTienSoKhac from './screens/RutTienSoKhac';
 const Stack = createStackNavigator();
 const App = () => (
   <NavigationContainer styles={styles.container}>
@@ -29,6 +33,10 @@ const App = () => (
       <Stack.Screen name="ChuyenTien" component={ChuyenTien} />
       <Stack.Screen name="ChooseBank" component={ChooseBank} />
       <Stack.Screen name="ChuyenTienStep1" component={TabsChuyenTien} />
+      <Stack.Screen name="NapRut" component={NapRut}></Stack.Screen>
+      <Stack.Screen name="NapTien" component={NapTien}></Stack.Screen>
+      <Stack.Screen name="RutTien" component={RutTien}></Stack.Screen>
+      <Stack.Screen name="RutTienSoKhac" component={RutTienSoKhac}></Stack.Screen>
     </Stack.Navigator>
   </NavigationContainer>
 );

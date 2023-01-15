@@ -10,7 +10,7 @@ const ChuyenTienSoTK = (props) => {
                 <Text style={
                     { position: "relative", top: 18, left: 20, zIndex: 999, fontWeight: "bold", backgroundColor: "white", width: 90, paddingLeft: 5 }
                 }>Số tài khoản</Text>
-                <Input keyboardType="numeric" inputContainerStyle={styles.chuyenTien} placeholder='0123456789' errorMessage="Số thẻ không hợp lệ" errorStyle={{ top: 10 }} />
+                <Input keyboardType="numeric" inputContainerStyle={styles.chuyenTien} placeholder='0123456789' errorMessage="Số tài khoản không hợp lệ" errorStyle={{ top: 10 }} />
             </View>
 
             <View style={{ width: "100%" }}>
