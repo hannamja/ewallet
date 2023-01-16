@@ -18,6 +18,7 @@ import NapRut from './screens/NapRut';
 import NapTien from './screens/NapTien';
 import RutTien from './screens/RutTien';
 import RutTienSoKhac from './screens/RutTienSoKhac';
+import QRCodeThanhToan from './screens/QRCodeThanhToan';
 const Stack = createStackNavigator();
 const App = () => (
   <NavigationContainer styles={styles.container}>
@@ -37,6 +38,7 @@ const App = () => (
       <Stack.Screen name="NapTien" component={NapTien}></Stack.Screen>
       <Stack.Screen name="RutTien" component={RutTien}></Stack.Screen>
       <Stack.Screen name="RutTienSoKhac" component={RutTienSoKhac}></Stack.Screen>
+      <Stack.Screen name="QRCodeThanhToan" component={QRCodeThanhToan}></Stack.Screen>
     </Stack.Navigator>
   </NavigationContainer>
 );

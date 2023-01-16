@@ -2,7 +2,8 @@
   package="com.ewallet">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission-sdk-23 android:name="android.permission.VIBRATE"/>
     <application
       android:name=".MainApplication"
       android:label="@string/app_name"

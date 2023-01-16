@@ -31,7 +31,7 @@ const Main = ({ navigation }) => {
                             <Image source={require('../assets/qr.png')} style={styles.chuyentienIcon}></Image>
                             <Text>QR Thanh Toán</Text>
                         </TouchableOpacity>
-                        <TouchableOpacity style={{ flexDirection: "column", alignItems: "center" }} onPress={() => navigation.navigate("NapRut")}>
+                        <TouchableOpacity style={{ flexDirection: "column", alignItems: "center" }} onPress={() => navigation.navigate("QRCodeThanhToan")}>
                             <Image source={require('../assets/naprut.png')} style={styles.naprutIcon}></Image>
                             <Text>Nạp/Rút</Text>
                         </TouchableOpacity>

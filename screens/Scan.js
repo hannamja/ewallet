@@ -1,23 +1,46 @@
 import React from "react";
-import { ImageBackground, View, Text, StyleSheet, Image, SafeAreaView } from "react-native";
-import { Header, Divider } from "@rneui/base";
-const image = require('../assets/banner.jpg');
-const Scan = () => {
+import QRCode from "react-native-qrcode-svg";
+import { View, Text, StyleSheet, Image, SafeAreaView } from "react-native";
+import { TouchableOpacity } from "react-native-gesture-handler";
+import { Header, Button } from "@rneui/base";
+import { Input, Dialog } from "@rneui/themed";
+import { useState, useEffect } from "react";
+import QRCodeScanner from "react-native-qrcode-scanner";
+const Scan = ({ navigation, route }) => {
     return (
-
-        <View style={styles.txt}>
-            <Text>Scan</Text>
-        </View>
+        <SafeAreaView style={{ alignItems: "center", backgroundColor: "white", height: "100%" }}>
+            <QRCodeScanner reactivate showMarker cameraStyle={{ width: "100%", height: "100%" }}
+                onRead={(e) => {
+                    console.log(e.data)
+                }}
+            />
+        </SafeAreaView >
 
     )
 }
 
+
 const styles = StyleSheet.create({
-    txt: {
-        flex: 1,
-        fontSize: 300,
-        borderWidth: 20,
-        borderColor: "lime"
+    chuyenTienWrapper: {
+
+    },
+    chuyenTien: {
+        width: "100%",
+        backgroundColor: "white",
+        borderWidth: 1,
+        borderColor: "#66cc9a",
+        borderRadius: 5,
+        top: 10,
+    },
+    buttonMoney: {
+        width: 100,
+        height: 40,
+        borderRadius: 10,
+        backgroundColor: "grey",
+        flexDirection: "row",
+        justifyContent: "center",
+        alignItems: "center",
+        marginTop: 10
     }
-});
+})
 export default Scan
